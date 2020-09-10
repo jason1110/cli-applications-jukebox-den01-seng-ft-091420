@@ -34,7 +34,7 @@ def play(songs)
       answer = "Invalid input, please try again"
     end  
   end
-p answer 
+puts answer 
 end
 
 def list(songs)
