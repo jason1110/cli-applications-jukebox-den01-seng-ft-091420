@@ -27,7 +27,7 @@ def play(songs)
   user_input = gets.strip
   answer = ""
   songs.each_with_index do |song_name, song_number|
-    if user_input == song_name 
+    if user_input == song_name.to_s 
       answer = "Playing #{song_name}"
     elsif user_input == (song_number + 1).to_s
       answer = "Playing #{song_name}"
