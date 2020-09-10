@@ -31,7 +31,7 @@ def play(songs)
     if user_input == song_name || user_input == (song_number + 1).to_s
       answer =  "Playing #{song_name}"
     end
-answer    
+    
     if answer.include?("Playing")
       puts answer
     else  
