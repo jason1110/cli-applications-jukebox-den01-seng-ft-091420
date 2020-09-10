@@ -22,11 +22,11 @@ def help
   puts "- help : displays this help message"
   puts "- list : displays a list of songs you can play"
   puts "- play : lets you choose a song to play"
-  puts "- exit : exits the program"
+  puts "- exit : exits this program"
 end 
 
 def play(songs)
-  puts "Please enter a song name or number:"
+  output = puts "Please enter a song name or number:"
   user_input = gets.strip
   
   songs.each_with_index do |song_name, song_number|
@@ -34,6 +34,7 @@ def play(songs)
       puts "Playing #{song_name}"
     else
       puts "Invalid input, please try again"
+      output
       user_input
     end
   end  
