@@ -34,7 +34,6 @@ def play(songs)
     song_number += song_number + 1
     if user_input == song_name || user_input == song_number
       puts "Playing #{song_name}"
-    binding.pry
     else
       puts "Invalid input, please try again"
     end
