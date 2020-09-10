@@ -35,7 +35,6 @@ def play(songs)
       return "Invalid input, please try again"
     end
   end
-binding.pry
 end
 
 def list(songs)
