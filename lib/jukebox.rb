@@ -31,6 +31,7 @@ def play(songs)
       answer = "Playing #{song_name}"
     end  
   end
+puts answer  
 end
 
 def list(songs)
