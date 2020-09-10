@@ -28,11 +28,11 @@ def play(songs)
   answer = ""
   songs.each_with_index do |song_name, song_number|
     if user_input == song_name 
-      return "Playing #{song_name}"
+      puts "Playing #{song_name}"
     elsif user_input == (song_number + 1).to_s
-      return "Playing #{song_name}"
+      puts "Playing #{song_name}"
     else
-      return "Invalid input, please try again"
+      puts "Invalid input, please try again"
     end
   end
 end
