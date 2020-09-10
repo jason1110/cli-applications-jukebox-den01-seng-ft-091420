@@ -35,7 +35,8 @@ def play(songs)
     if answer.include?("Playing")
       puts answer
     else  
-      puts "Invalid input, please try again"
+      answer = "Invalid input, please try again"
+      answer
     end  
   end
 end
