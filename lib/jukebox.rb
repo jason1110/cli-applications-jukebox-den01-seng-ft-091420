@@ -31,7 +31,7 @@ def play(songs)
       answer = "Playing #{song_name}"
       answer
 binding.pry
-    elsif user_input == (song_number + 1).to_s
+    elsif user_input == (song_number).to_s
       answer = "Playing #{song_name}"
       answer
     else
