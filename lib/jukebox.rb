@@ -53,5 +53,5 @@ def run(command)
   welcome
   help
 end
-binding.pry
-list(songs)
+
+#list(songs)
