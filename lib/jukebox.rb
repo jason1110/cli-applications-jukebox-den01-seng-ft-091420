@@ -54,7 +54,7 @@ def run(songs)
   
   case jukebox_input
   when "list"
-    list
+    list(songs)
   when "help"
     help
   when "play"
