@@ -30,7 +30,7 @@ def play(songs)
     if user_input == song_name || user_input == (song_number + 1).to_s
       answer =  "Playing #{song_name}"
     end
-    if user_input != song_name && user_input != (song_number + 1).to_s
+    if answer != answer.include?("Playing")
       answer = "Invalid input, please try again"
     end  
   end
