@@ -30,6 +30,7 @@ def play(songs)
   user_input = gets.strip
   
   songs.each_with_index do |song_name, song_number|
+    song_number += song_number + 1
     if user_input == song_name || user_input == (song_number += 1)
 binding.pry
       puts "Playing #{song_name}"
