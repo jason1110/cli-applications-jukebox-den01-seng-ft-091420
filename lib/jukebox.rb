@@ -37,7 +37,6 @@ answer
     else  
       puts "Invalid input, please try again"
     end  
-binding.pry     
   end
 end
 
