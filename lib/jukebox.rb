@@ -58,5 +58,4 @@ def run(songs)
   #play(songs)
   #exit_jukebox
 end
-binding.pry
 #list(songs)
