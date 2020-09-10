@@ -30,11 +30,12 @@ def play(songs)
     if user_input == song_name.to_s 
       answer = "Playing #{song_name}"
       answer
-binding.pry
     elsif user_input == (song_number + 1).to_s
       answer = "Playing #{song_name}"
+      answer
     else
       answer =  "Invalid input, please try again"
+      answer
     end
   end
 end
