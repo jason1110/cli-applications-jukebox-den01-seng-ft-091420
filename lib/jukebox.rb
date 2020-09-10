@@ -31,7 +31,7 @@ def play(songs)
       answer = "Playing #{song_name}"
     else
     #if user_input != song_name && user_input != (song_number + 1).to_s
-      answer = "Invalid input, please try again"
+      puts "Invalid input, please try again"
     end  
   end
 puts answer  
