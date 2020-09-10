@@ -1,3 +1,4 @@
+require 'pry'
 songs = [
   "Phoenix - 1901",
   "Tokyo Police Club - Wait Up",
@@ -34,6 +35,7 @@ def list(songs)
     list << song_list + 1
   end
 list
+binding.pry
 end
 
 def exit_jukebox
