@@ -50,7 +50,10 @@ end
   
 
 def run(songs)
-  #puts "Please enter a command:"
+  puts "Please enter a command:"
+  jukebox_input = gets.strip
+  
+  when jukebox_input
   #help
   #list(songs)
   #play(songs)
