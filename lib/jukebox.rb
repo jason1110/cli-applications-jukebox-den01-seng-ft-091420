@@ -47,3 +47,5 @@ def run(command)
   welcome
   help
 end
+
+list(songs)
