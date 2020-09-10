@@ -27,14 +27,13 @@ def play(songs)
   user_input = gets.strip
   answer = ""
   songs.each_with_index do |song_name, song_number|
-    if user_input == song_name.to_s 
+    if user_input == song_name
       answer = "Playing #{song_name}"
       answer
 binding.pry
     elsif user_input == (song_number + 1).to_s
       answer = "Playing #{song_name}"
       answer
-binding.pry      
     else
       answer =  "Invalid input, please try again"
       answer
