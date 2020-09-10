@@ -30,11 +30,12 @@ def play(songs)
     if user_input == song_name || user_input == (song_number + 1).to_s
       answer =  "Playing #{song_name}"
     end
-    if answer != answer.include?("Playing")
-      answer = "Invalid input, please try again"
+    if answer.include?("Playing")
+      puts answer
+    else  
+      puts "Invalid input, please try again"
     end  
   end
-puts answer 
 end
 
 def list(songs)
