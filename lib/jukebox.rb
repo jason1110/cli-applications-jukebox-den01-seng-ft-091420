@@ -36,6 +36,7 @@ def play(songs)
     end
   end
 puts answer  
+binding.pry
 end
 
 def list(songs)
