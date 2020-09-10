@@ -13,9 +13,6 @@ songs = [
 
 
 
-def welcome
-  puts "Please enter a command:"
-end
 
 def help
   puts "I accept the following commands:"
@@ -51,9 +48,12 @@ def exit_jukebox
 end  
   
 
-def run(command)
-  welcome
+def run(songs)
+  puts "Please enter a command:"
   help
+  list(songs)
+  play(songs)
+  exit_jukebox
 end
 
 #list(songs)
