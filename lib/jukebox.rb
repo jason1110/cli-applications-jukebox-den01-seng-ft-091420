@@ -30,7 +30,7 @@ def play(songs)
     song_number += song_number + 1
     if user_input == song_name 
       answer = "Playing #{song_name}"
-    elsif user_input == song_number
+    elsif user_input.to_i == song_number
       answer = "Playing #{song_name}"
     binding.pry  
     else
