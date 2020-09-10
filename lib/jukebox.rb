@@ -34,11 +34,10 @@ def play(songs)
 answer    
     if answer.include?("Playing")
       puts answer
-binding.pry
     else  
       puts "Invalid input, please try again"
     end  
-     
+binding.pry     
   end
 end
 
