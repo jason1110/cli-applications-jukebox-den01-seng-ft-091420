@@ -47,21 +47,20 @@ end
   
 
 def run(songs)
-  jukebox_input = ""
+jukebox_input = ""
   while jukebox_input do
-  puts "Please enter a command:"
-  jukebox_input = gets.strip
+    puts "Please enter a command:"
+    jukebox_input = gets.strip
   
-  case jukebox_input
-  when "list"
-    list(songs)
-  when "help"
-    help
-  when "play"
-    play(songs)
-  when "exit"
-    exit
-  end
-end  
+    case jukebox_input
+    when "list"
+      list(songs)
+    when "help"
+      help
+    when "play"
+      play(songs)
+    when "exit"
+      exit_jukebox
+    end
+  end  
 end
-#list(songs)
