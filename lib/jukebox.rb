@@ -32,7 +32,7 @@ end
 def list(songs)
   list = []
   songs.each_with_index do |song_list|
-    list << song_list + 1
+    list << song_list
   end
 list
 binding.pry
