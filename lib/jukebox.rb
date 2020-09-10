@@ -26,7 +26,7 @@ def play(songs)
  puts "Please enter a song name or number:"
   user_input = gets.strip
   
-  songs.
+  songs.each
     answer = ""
     if user_input == song_name || user_input == (song_name.index + 1).to_s
       answer =  "Playing #{song_name}"
