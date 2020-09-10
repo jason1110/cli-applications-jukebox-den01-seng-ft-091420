@@ -27,18 +27,18 @@ def play(songs)
   user_input = gets.strip
   
   songs.each_with_index do |song_name, song_number|
- 
-   # if user_input == song_name || user_input == (song_number + 1).to_s
-    #  answer =  "Playing #{song_name}"
-    #end
-    #if answer.include?("Playing")
-    #  puts answer
-    #else  
-    #  puts "Invalid input, please try again"
-    #end  
-    answer 
+    answer = ""
+    if user_input == song_name || user_input == (song_number + 1).to_s
+      answer =  "Playing #{song_name}"
+    end
+    if answer.include?("Playing")
+      puts answer
+    else  
+      puts "Invalid input, please try again"
+    end  
+     
   end
-puts answer  
+answer  
 end
 
 def list(songs)
