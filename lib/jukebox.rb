@@ -57,7 +57,7 @@ def run(songs)
     help
   when "play"
     play(songs)
-  whe "exit"
+  when "exit"
     exit
   end
 
