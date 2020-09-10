@@ -47,7 +47,8 @@ end
   
 
 def run(songs)
-  until jukebox_input != exit do
+  jukebox_input = ""
+  while jukebox_input do
   puts "Please enter a command:"
   jukebox_input = gets.strip
   
