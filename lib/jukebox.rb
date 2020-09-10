@@ -32,6 +32,7 @@ end
 def list(songs)
   songs.each_with_index do |song_name, song_number|
     puts "#{song_number += 1}. #{song_name}"
+  binding.pry
   end
 binding.pry
 end
