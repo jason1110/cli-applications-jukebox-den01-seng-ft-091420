@@ -32,6 +32,7 @@ def play(songs)
       answer = "Playing #{song_name}"
     elsif user_input.to_i == song_number
       answer = "Playing #{song_name}"
+binding.pry
     else
       answer = "Invalid input, please try again"
     end
