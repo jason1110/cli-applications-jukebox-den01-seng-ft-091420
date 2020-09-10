@@ -32,15 +32,14 @@ def play(songs)
       answer =  "Playing #{song_name}"
     end
 answer    
-binding.pry
     if answer.include?("Playing")
       puts answer
+binding.pry
     else  
       puts "Invalid input, please try again"
     end  
      
   end
-answer  
 end
 
 def list(songs)
