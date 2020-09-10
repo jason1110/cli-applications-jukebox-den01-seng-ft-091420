@@ -29,6 +29,7 @@ def play(songs)
   songs.each_with_index do |song_name, song_number|
   answer = ""
     case user_input
+    
     when song_name
       answer =  "Playing #{song_name}"
     when (song_number + 1).to_s
@@ -44,8 +45,9 @@ def play(songs)
     #else  
     #  puts "Invalid input, please try again"
     #end  
-  puts answer 
+    answer 
   end
+puts answer  
 end
 
 def list(songs)
