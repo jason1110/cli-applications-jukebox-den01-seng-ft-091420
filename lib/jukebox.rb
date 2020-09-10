@@ -27,16 +27,7 @@ def play(songs)
   user_input = gets.strip
   
   songs.each_with_index do |song_name, song_number|
-  answer = ""
-    case user_input
-    
-    when song_name
-      answer =  "Playing #{song_name}"
-    when (song_number + 1).to_s
-      answer =  "Playing #{song_name}"
-    else 
-      answer =  "Invalid input, please try again"
-    end  
+ 
    # if user_input == song_name || user_input == (song_number + 1).to_s
     #  answer =  "Playing #{song_name}"
     #end
