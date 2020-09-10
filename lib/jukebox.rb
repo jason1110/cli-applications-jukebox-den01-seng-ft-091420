@@ -24,14 +24,14 @@ end
 
 def play(songs)
  puts "Please enter a song name or number:"
-  user_input = gets.chomp
+  user_input = gets.strip
   answer = ""
   songs.each_with_index do |song_name, song_number|
     #song_number += song_number + 1
-    if user_input == song_name 
-      answer = "Playing #{song_name[song_number]}"
+    if user_input == song_name.to_s 
+      answer = "Playing #{song_name}"
     elsif user_input.to_i == song_number
-      answer = "Playing #{song_name[song_number]}"
+      answer = "Playing #{song_name}"
     else
       answer = "Invalid input, please try again"
     end
