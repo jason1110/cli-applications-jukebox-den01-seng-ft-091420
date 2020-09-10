@@ -66,7 +66,7 @@ def run(songs)
     play(songs)
   when "exit"
     exit
-  else  
+  end
 
 end
 #list(songs)
