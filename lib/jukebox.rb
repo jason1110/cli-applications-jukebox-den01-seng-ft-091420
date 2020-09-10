@@ -49,11 +49,11 @@ end
   
 
 def run(songs)
-  puts "Please enter a command:"
-  help
-  list(songs)
-  play(songs)
-  exit_jukebox
+  #puts "Please enter a command:"
+  #help
+  #list(songs)
+  #play(songs)
+  #exit_jukebox
 end
 
 #list(songs)
