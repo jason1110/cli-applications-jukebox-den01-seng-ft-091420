@@ -26,15 +26,24 @@ def play(songs)
  puts "Please enter a song name or number:"
   user_input = gets.strip
  answer = ""
+  
   songs.each_with_index do |song_name, song_number|
-    if user_input == song_name || user_input == (song_number + 1).to_s
-      answer =  "Playing #{song_name}"
-    end
-    if answer.include?("Playing")
-      puts answer
-    else  
+    case user_input
+    when song_name
+      puts "Playing #{song_name}"
+    when (song_number + 1).to_s
+      puts "Playing #{song_name}"
+    else 
       puts "Invalid input, please try again"
     end  
+   # if user_input == song_name || user_input == (song_number + 1).to_s
+    #  answer =  "Playing #{song_name}"
+    #end
+    #if answer.include?("Playing")
+    #  puts answer
+    #else  
+    #  puts "Invalid input, please try again"
+    #end  
   end
 end
 
@@ -53,10 +62,16 @@ def run(songs)
   puts "Please enter a command:"
   jukebox_input = gets.strip
   
-  when jukebox_input
-  #help
-  #list(songs)
-  #play(songs)
-  #exit_jukebox
+  case jukebox_input
+  when "list"
+    list
+  when "help"
+    help
+  when "play"
+    play(songs)
+  when "exit"
+    exit
+  else  
+
 end
 #list(songs)
